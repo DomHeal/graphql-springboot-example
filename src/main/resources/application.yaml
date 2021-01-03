@@ -1,0 +1,20 @@
+graphiql:
+    mapping: /graphiql
+    endpoint:
+        graphql: /graphql
+        subscriptions: /subscriptions
+    subscriptions:
+        timeout: 30
+        reconnect: false
+    static:
+        basePath: /
+    enabled: true
+    pageTitle: GraphiQL
+    cdn:
+        enabled: false
+        version: 0.13.0
+    props:
+        resources:
+            query: graphql/schema.graphqls
+    variables:
+        editorTheme: "solarized light"
